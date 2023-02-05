@@ -1,0 +1,95 @@
+﻿@model WebShopPet.Models.USER
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<!-- breadcrumb start -->
+<div class="breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="page-title">
+                    <h2>Tạo tài khoản</h2>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <nav aria-label="breadcrumb" class="theme-breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="~/Home/Index">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Tạo tài khoản</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb End -->
+<!--section start-->
+<section class="register-page section-b-space">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Tạo tài khoản</h3>
+                <div class="theme-card">
+                    @using (Html.BeginForm("create", "Users", FormMethod.Post, new { @class = "theme-form", @id = "form" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                @Html.LabelFor(model => model.EMAIL, htmlAttributes: new { @class = "control-label col-md-2" })
+                                @Html.EditorFor(model => model.EMAIL, new { htmlAttributes = new { @class = "form-control", @id = "email", @placeholder = "Email", @type = "email" } })
+                                @Html.ValidationMessageFor(model => model.EMAIL, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="col-md-6">
+                                @Html.LabelFor(model => model.NAME, htmlAttributes: new { @class = "control-label" })
+                                @Html.EditorFor(model => model.NAME, new { htmlAttributes = new { @class = "form-control", @id = "lname", @placeholder = "Tên người dùng" } })
+                                @Html.ValidationMessageFor(model => model.NAME, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                @Html.LabelFor(model => model.PASSWORD, htmlAttributes: new { @class = "control-label col-md-2" })
+                                @Html.EditorFor(model => model.PASSWORD, new { htmlAttributes = new { @class = "form-control", @id = "password", @placeholder = "Nhập mật khẩu", @type = "password" } })
+                                @Html.ValidationMessageFor(model => model.PASSWORD, "", new { @class = "text-danger" })
+                            </div>
+                            <br />
+                            <div class="col-md-6">
+                                <label for="pass-confirm" class="control-label">Mật khẩu xác thực</label>
+                                <input type="password" class="form-control" id="confirm_password"
+                                       placeholder="Enter again your password" required>
+                                <span class="text-danger field-validation-error" id="pass-confirm-error" data-valmsg-for="PASSWORD" data-valmsg-replace="true">
+                                    <span id="password-error" class=""></span>
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                @Html.LabelFor(model => model.BIRTHDAY, htmlAttributes: new { @class = "control-label" })
+                                @Html.EditorFor(model => model.BIRTHDAY, new { htmlAttributes = new { @class = "form-control", @id = "lname", @placeholder = "Ngày sinh" } })
+                                @Html.ValidationMessageFor(model => model.BIRTHDAY, "", new { @class = "text-danger" })
+                            </div>
+
+                            <input type="submit" value="Tạo tài khoản" class="btn btn-solid" />
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Section ends-->
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+<script>
+    $(document).on("submit", "form", function (e) {
+        if (document.getElementById('password').value === document.getElementById('confirm_password').value) {
+        } else {
+            document.getElementById('pass-confirm-error').innerHTML = "Mật khẩu không khớp";
+            e.preventDefault();
+            return false;
+        }
+    });
+</script>

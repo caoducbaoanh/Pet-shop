@@ -1,0 +1,153 @@
+﻿@model List<WebShopPet.Areas.Admin.Controllers.Information>
+
+<!-- row -->
+<div class="container-fluid">
+    <div class="form-head d-flex mb-3 mb-md-5 align-items-start">
+        <div class="mr-auto d-none d-lg-block">
+            <h3 class="text-primary font-w600">Chào mừng quay trở lại!</h3>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-xl-6 col-xxl-12">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-sm-6">
+                    <div class="widget-stat card bg-danger">
+                        <div class="card-body  p-4">
+                            <div class="media">
+                                <span class="mr-3">
+                                    <i class="flaticon-381-calendar-1"></i>
+                                </span>
+                                <div class="media-body text-white text-right">
+                                    <p class="mb-1">Hàng Tồn</p>
+                                    <h3 class="text-white">@ViewBag.TongHang</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-sm-6">
+                    <div class="widget-stat card bg-success">
+                        <div class="card-body p-4">
+                            <div class="media">
+                                <span class="mr-3">
+                                    <i class="flaticon-381-diamond"></i>
+                                </span>
+                                <div class="media-body text-white text-right">
+                                    <p class="mb-1">Đã bán</p>
+                                    <h3 class="text-white">@ViewBag.DaBan</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-sm-6">
+                    <div class="widget-stat card bg-info">
+                        <div class="card-body p-4">
+                            <div class="media">
+                                <span class="mr-3">
+                                    <i class="flaticon-381-heart"></i>
+                                </span>
+                                <div class="media-body text-white text-right">
+                                    <p class="mb-1">Tổng doanh số</p>
+                                    <h3 class="text-white">@ViewBag.TongDoanhSo VND</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-sm-6">
+                    <div class="widget-stat card bg-primary">
+                        <div class="card-body p-4">
+                            <div class="media">
+                                <span class="mr-3">
+                                    <i class="flaticon-381-user-7"></i>
+                                </span>
+                                <div class="media-body text-white text-right">
+                                    <p class="mb-1">Tổng người dùng</p>
+                                    <h3 class="text-white">@ViewBag.SoUser</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-12">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">Bảng thống kê</h4>
+        </div>
+        @using (Html.BeginForm())
+        {
+            <input type="date" name="startDate" placeholder="YYYY-DD-MM" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" />
+            <input type="date" name="endDate" placeholder="YYYY-DD-MM" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" />
+            <input type="submit" value="Lọc" />
+
+        }
+        <div class="card-body">
+            <div class="table-responsive">
+                <table id="LSPro" class="table table-bordered table-responsive-sm">
+                    <thead>
+                        <tr>
+                            <th>Mã Hàng</th>
+                            <th>Tên hàng</th>
+                            <th>Giá nhập</th>
+                            <th>Giá bán</th>
+                            <th>Đã bán</th>
+                            <th>Tiền Thu</th>
+                            <th>Lợi nhuận trên số lượng bán</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <th>@item.ID</th>
+                                @foreach (var e in item.ORDER_DETAILS)
+                                {
+                                    <td>@e.PRODUCT.NAME</td>
+                                    <td>@e.PRODUCT.IMPORT_PRICE</td>
+                                    <td>@e.PRODUCT.PRICE</td>
+                                    break;
+                                }
+                                <td>@item.Sell</td>
+                                <td>@item.Amount</td>
+
+                                <td>@item.Profit</td>
+                            </tr>
+                        }
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th>Tổng</th>
+                            <th>@ViewBag.TienThu</th>
+                            <th>@ViewBag.TienLai</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#LSPro').DataTable({
+            dom: 'Bfrtip',
+            buttons: [
+                'copy', 'csv', 'excel', 'print'
+            ]
+        });
+    });
+</script>

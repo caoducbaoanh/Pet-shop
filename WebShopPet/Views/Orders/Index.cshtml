@@ -1,0 +1,209 @@
+﻿@model List<WebShopPet.Models.ORDER_DETAILS>
+
+@{
+    int? TotalAmount = 0;
+}
+<!-- breadcrumb start -->
+<div class="breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="page-title">
+                    <h2>cart</h2>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <nav aria-label="breadcrumb" class="theme-breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="~/Home/Index">Home</a></li>
+                        <li class="breadcrumb-item active">cart</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb End -->
+<!--section start-->
+<section class="cart-section section-b-space">
+    <form action="/Orders/UpdateOrder" method="post">
+        @if (@HttpContext.Current.Session["Order"] != null)
+        {
+            var orders = ((List<WebShopPet.Models.ORDER_DETAILS>)HttpContext.Current.Session["Order"]).Count.ToString();
+            if (int.Parse(orders) > 0)
+            {
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <table class="table cart-table table-responsive-xs">
+                                <thead>
+                                    <tr class="table-head">
+                                        <th scope="col">Ảnh</th>
+                                        <th scope="col">Tên sản phẩm</th>
+                                        <th scope="col">Giá</th>
+                                        <th scope="col">Số lượng</th>
+                                        <th scope="col">Xóa</th>
+                                        <th scope="col">Tổng tiến</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        TotalAmount += item.QUANTITY * item.PRODUCT.PRICE;
+                                        <tr>
+                                            <td>
+                                                <a href="~/Product/Show"><img src="@Url.Content(item.PRODUCT.PRIMARY_IMAGE)" alt=""></a>
+                                            </td>
+                                            <td>
+                                                <a href="#"> @item.PRODUCT.NAME</a>
+                                            </td>
+                                            <td>
+                                                <h2>$@item.PRODUCT.PRICE</h2>
+                                            </td>
+                                            <td>
+                                                <div class="qty-box">
+                                                    <div class="input-group">
+                                                        <input type="number" name="quantity" class="form-control input-number"
+                                                               value=@item.QUANTITY min="1" max="@item.PRODUCT.AVAILABLE_QUANTITY" oninput="validateQuantity(@item.PRODUCT.AVAILABLE_QUANTITY)" />
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><a href="/Orders/DeleteCart?ProductID=@item.PRODUCT.ID" class="icon"><i class="ti-close"></i></a></td>
+                                            <td>
+                                                <h2 class="td-color">@(item.QUANTITY * item.PRODUCT.PRICE)</h2>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+
+                            </table>
+                            <table class="table cart-table table-responsive-md">
+                                <tfoot>
+                                    <tr>
+                                        <td>total price :</td>
+                                        <td>
+                                            <h2>
+                                                @TotalAmount
+                                            </h2>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row cart-buttons">
+                        <div class="col-6"><a href="~/Home/Index" class="btn btn-solid">Tiếp tục mua hàng</a></div>
+                        <div class="col-2"></div>
+                        <div class="col-1"><input type="submit" class="btn btn-solid" value="Cập nhật giỏ" /></div>
+                        <div class="col-3"><a href="~/Orders/Checkout" class="btn btn-solid">Thanh toán</a></div>
+                    </div>
+
+                </div>
+
+            }
+            else
+            {
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-3"><h3>Giỏ hàng của bạn đang trống</h3></div>
+                        <div class="col-6"><a href="~/Home/Index" class="btn btn-solid">Tiếp tục mua hàng</a></div>
+                    </div>
+                </div>
+            }
+
+        }
+
+    </form>
+    @if (@HttpContext.Current.Session["ID"] != null && ViewBag.OrderItems.Count > 0)
+    {
+        <section class="cart-section section-b-space">
+            <div class="container">
+                <div class="row">
+                    <div class="col-5"></div>
+                    <div class="col-3"><h3>Sản phẩm bạn đã mua</h3></div>
+                    <div class="col-4"></div>
+                </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table class="table cart-table table-responsive-xs">
+                            <thead>
+                                <tr class="table-head">
+                                    <th scope="col">Ảnh</th>
+                                    <th scope="col">Tên sản phẩm</th>
+                                    <th scope="col">Giá</th>
+                                    <th scope="col">Số lượng</th>
+                                    <th scope="col">Trạng thái</th>
+                                    <th scope="col">Ngày mua</th>
+                                    <th scope="col">Tổng tiến</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in ViewBag.OrderItems)
+                                {
+                                    string url_product = "~/Product/Details/" + item.PRODUCT.ID;
+                                <tr>
+                                    <td>
+                                        <a href="@Url.Content(url_product)"><img src="@Url.Content(item.PRODUCT.PRIMARY_IMAGE)" alt=""></a>
+                                    </td>
+                                    <td>
+                                        <a href="@Url.Content(url_product)"> @item.PRODUCT.NAME</a>
+                                    </td>
+                                    <td>
+                                        <span>@item.PRODUCT.PRICE</span>
+                                    </td>
+                                    <td>
+                                        <span>@item.QUANTITY</span>
+                                    </td>
+                                    <td>
+                                        @if (int.Parse(item.ORDER.STATUS.ToString()) == 0)
+                                        {
+                                            <span>Chờ xác nhận</span>
+                                        }
+                                        else if (int.Parse(item.ORDER.STATUS.ToString()) == 1)
+                                        {
+                                            <span>Đang giao hàng</span>
+                                        }
+                                        else
+                                        {
+                                            <span>Đã nhận hàng</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        <span>@item.ORDER.DATE.ToString("d/M/yyyy")</span>
+                                    <td>
+                                        <h2 class="td-color">@(item.QUANTITY * item.PRODUCT.PRICE)</h2>
+                                    </td>
+                                </tr>
+                                }
+                            </tbody>
+
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    }
+
+    <!--section end-->
+    @section Scripts
+{
+        <script type="text/javascript">
+
+            function validateQuantity(quantity) {
+                debugger
+                var inp_quantity = parseInt($('.input-number').val());
+                if (inp_quantity > parseInt(quantity)) {
+                    $('.input-number').val(1);
+                    toastr.error("Số lượng hàng không đủ ");
+                }
+            }
+        </script>
+    }

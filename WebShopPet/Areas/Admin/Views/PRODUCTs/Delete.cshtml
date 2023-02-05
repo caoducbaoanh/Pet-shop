@@ -1,0 +1,121 @@
+﻿@model WebShopPet.Models.PRODUCT
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h3>Bạn có chắc sẽ xóa sản phẩm này?</h3>
+@if (ViewBag.Error != null)
+{
+    <br />
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Thương hiệu
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BRAND.NAME)
+        </dd>
+
+        <dt>
+            Danh mục
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CATEGORy.NAME)
+        </dd>
+
+        <dt>
+            Tên
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NAME)
+        </dd>
+
+        <dt>
+            Giá
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRICE)
+        </dd>
+
+        <dt>
+            Giảm giá
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DISCOUNT)
+        </dd>
+
+        <dt>
+            Màu sắc
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COLOR)
+        </dd>
+
+        <dt>
+            Kích cỡ
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SIZE)
+        </dd>
+
+        <dt>
+            Thông tin
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DESCRIPTION)
+        </dd>
+
+        <dt>
+            Số lượng còn
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AVAILABLE_QUANTITY)
+        </dd>
+
+        <dt>
+            Đã bán
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QUANTITY_SOLD)
+        </dd>
+
+        <dt>
+            Ảnh
+        </dt>
+
+        <dd>
+            @{
+                string ImagePath = Model.PRIMARY_IMAGE;
+            }
+            <img src="@Url.Content(ImagePath)" width="250" height="250" />
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-default" /> |
+            @Html.ActionLink("Quay lại danh sách", "Index")
+        </div>
+    }
+</div>
+
+

@@ -1,0 +1,62 @@
+﻿@model List<WebShopPet.Models.ORDER_DETAILS>
+
+@{
+    ViewBag.Title = "Checkout";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int? TotalAmount = 0;
+}
+
+<section class="section-b-space">
+    <div class="container">
+        <div class="checkout-page">
+            <div class="checkout-form">
+                @using (Html.BeginForm("PayOrder", "ORDERs", FormMethod.Get))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12 col-xs-12">
+                            <div class="checkout-title">
+                                <h3>Billing Details</h3>
+                            </div>
+                            <div class="row check-out">
+
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <div class="field-label">Địa chỉ</div>
+                                    <input type="text" name="ADDRESS" value="" placeholder="Nhập địa chỉ">
+                                </div>
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <div class="field-label">Số điện thoại</div>
+                                    <input type="text" name="PHONE" value="" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 col-xs-12">
+                            <div class="checkout-details">
+                                <div class="order-box">
+                                    <div class="title-box">
+                                        <div>Product <span>Total</span></div>
+                                    </div>
+                                    <ul class="qty">
+                                        @foreach (var item in Model)
+                                        {
+                                            TotalAmount += item.QUANTITY * item.PRODUCT.PRICE;
+                                            <li>@item.PRODUCT.NAME × @item.QUANTITY <span>$@(item.QUANTITY * item.PRODUCT.PRICE) </span></li>
+                                        }
+                                    </ul>
+                                    <ul class="total">
+                                        <li>Total <span class="count">$@TotalAmount</span></li>
+                                    </ul>
+                                </div>
+                                <div class="payment-box">
+                                    <div class="upper-box"></div>
+                                    <div class="text-right"><input type="submit"  value="Đặt hàng" class="btn-solid btn" /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                </div>
+        </div>
+    </div>
+</section>
+

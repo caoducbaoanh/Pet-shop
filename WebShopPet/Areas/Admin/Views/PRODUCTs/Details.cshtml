@@ -1,0 +1,60 @@
+﻿@model WebShopPet.Models.PRODUCT
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Chi tiết sản phẩm</h2>
+
+<div class="card-body container">
+    <div class="row">
+        <div class="col-xl-3 ">
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade show active" id="first">
+                    @{
+                        string ImagePath = Model.PRIMARY_IMAGE;
+                    }
+                    <img class="img-fluid" src="@Url.Content(ImagePath)" alt="">
+                </div>
+
+            </div>
+        </div>
+        <!--Tab slider End-->
+        <div class="col-xl-9 col-sm-12">
+            <div class="product-detail-content">
+                <!--Product details-->
+                <div class="new-arrival-content pr">
+                    <h4>@Html.DisplayFor(model => model.NAME)</h4>
+                    <h5>Mã sản phẩm : #@Html.DisplayFor(model => model.ID) </h5>
+
+                    <div class="star-rating mb-2">
+
+                        <span class="review-text">(Đã bán @Html.DisplayFor(model => model.QUANTITY_SOLD))</span>
+                    </div>
+                    <p>Giá nhập : <span class="item">@Html.DisplayFor(model => model.IMPORT_PRICE) ̀̀VND</span> </p>
+                    <p class="price">Giá bán: @Html.DisplayFor(model => model.PRICE) VND</p>
+                    <p>
+                        Hàng tồn: <span class="item">
+                            @Html.DisplayFor(model => model.AVAILABLE_QUANTITY) <i class="fa fa-shopping-basket"></i>
+                        </span>
+                    </p>
+                    <p>Giảm giá : <span class="item">@Html.DisplayFor(model => model.DISCOUNT) ̀̀%</span> </p>
+                    <p>Danh mục: <span class="item">@Html.DisplayFor(model => model.CATEGORy.NAME)</span></p>
+                    <p>Thương hiệu: <span class="item">@Html.DisplayFor(model => model.BRAND.NAME)</span></p>
+                    <p>Kích cỡ: <span class="item">@Html.DisplayFor(model => model.SIZE)</span></p>
+                    <p>Màu sắc:  <span class="item">@Html.DisplayFor(model => model.COLOR)</span></p>
+                    <p class="text-content">
+                        Mô tả:
+                        @Html.DisplayFor(model => model.DESCRIPTION)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Quay lại danh sách", "Index")
+</p>

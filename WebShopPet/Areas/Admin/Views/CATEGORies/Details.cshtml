@@ -1,0 +1,41 @@
+﻿@model WebShopPet.Models.CATEGORy
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CATEGORy</h4>
+    <hr />
+    @if (ViewBag.Error != null)
+    {
+        <br />
+        <div class="alert alert-danger">@ViewBag.Error</div>
+    }
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PARENT_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PARENT_ID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Sửa", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Quay lại", "Index")
+</p>
+

@@ -1,0 +1,52 @@
+﻿@model IEnumerable<WebShopPet.Models.ORDER_DETAILS>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ORDER.ADDRESS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PRODUCT.NAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QUANTITY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PRODUCT_PRICE)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ORDER.ADDRESS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PRODUCT.NAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QUANTITY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PRODUCT_PRICE)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

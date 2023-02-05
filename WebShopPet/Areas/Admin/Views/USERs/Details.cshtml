@@ -1,0 +1,82 @@
+﻿@model WebShopPet.Models.USER
+
+@{
+    ViewBag.Title = "Details";
+    string imgPath =  Model.AVATAR;
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Chi tiết người dùng</h2>
+
+
+
+<div class="container-fluid">
+    <div class="form-head d-flex mb-3 mb-lg-5 align-items-start">
+        <a href="@Url.Action("Edit", "Users", new { id = Model.ID })" class="btn btn-dark"><i class="flaticon-381-clock mr-2"></i> Chỉnh sửa</a>
+    </div>
+
+    <div class="row">
+       
+        <div class="col-xl-8">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex doctor-info-details mb-5">
+                                <div class="media align-self-start">
+                                    <img alt="image" class="rounded" width="130" src="@Url.Content(imgPath)">
+                                    <i class="flaticon-381-heart"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h2 class="mb-2">@Html.DisplayFor(model => model.NAME)</h2>
+                                    <p class="mb-md-2 mb-sm-4 mb-2">#@Html.DisplayFor(model => model.ID)</p>
+                                    <p>Email: @Html.DisplayFor(model => model.EMAIL)</p>
+                                    @if (Model.SEX == true)
+                                    {
+                                        <p>Giới tính: Nam</p>
+                                    }
+                                    else
+                                    {
+                                        <p>Giới tính: Nữ</p>
+                                    }
+                                    @if (Model.STATUS == 1)
+                                    {
+                                        <p>Trạng thái: Hoạt động</p>
+                                    }
+                                    else
+                                    {
+                                        <p>Trạng thái: Khóa</p>
+                                    }
+                                 
+                                </div>
+                                <div class="text-md-right mt-4 mt-md-0">
+                                    <div class="dropdown mb-3">
+                                        <div class="btn btn-outline-primary" data-toggle="dropdown">
+                                            <i class="flaticon-381-user-7 mr-2"></i> @if (Model.ROLE == 1)
+                                            {
+                                                <span>Admin</span>
+                                            }
+                                            else
+                                            {
+                                                <span>Người dùng</span>
+                                            }
+                                        </div>
+                                        
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<p>
+    @Html.ActionLink("Quay lại danh sách", "Index")
+</p>

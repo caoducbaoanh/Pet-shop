@@ -1,0 +1,332 @@
+D:\Nhom5\WebShopPet\WebShopPet\bin\WebShopPet.dll.config
+D:\Nhom5\WebShopPet\WebShopPet\bin\WebShopPet.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\WebShopPet.pdb
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\csc.exe
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\csc.exe.config
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\csc.rsp
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\csi.exe
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\csi.exe.config
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\csi.rsp
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\System.AppContext.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\System.Collections.Immutable.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\System.Console.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\System.IO.Compression.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\System.IO.FileSystem.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\System.IO.Pipes.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\System.Reflection.Metadata.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\System.Security.AccessControl.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\System.Security.Claims.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\System.ValueTuple.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\System.Xml.XPath.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\vbc.exe
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\vbc.exe.config
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\vbc.rsp
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\VBCSCompiler.exe
+D:\Nhom5\WebShopPet\WebShopPet\bin\roslyn\VBCSCompiler.exe.config
+D:\Nhom5\WebShopPet\WebShopPet\bin\Antlr3.Runtime.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\EntityFramework.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\EntityFramework.SqlServer.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\Microsoft.Web.Infrastructure.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\Newtonsoft.Json.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\System.Web.Helpers.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\System.Web.Mvc.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\System.Web.Optimization.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\System.Web.Razor.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\System.Web.WebPages.Deployment.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\System.Web.WebPages.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\System.Web.WebPages.Razor.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\WebGrease.dll
+D:\Nhom5\WebShopPet\WebShopPet\bin\EntityFramework.xml
+D:\Nhom5\WebShopPet\WebShopPet\bin\EntityFramework.SqlServer.xml
+D:\Nhom5\WebShopPet\WebShopPet\bin\System.Web.Helpers.xml
+D:\Nhom5\WebShopPet\WebShopPet\bin\System.Web.Mvc.xml
+D:\Nhom5\WebShopPet\WebShopPet\bin\System.Web.Optimization.xml
+D:\Nhom5\WebShopPet\WebShopPet\bin\System.Web.Razor.xml
+D:\Nhom5\WebShopPet\WebShopPet\bin\System.Web.WebPages.xml
+D:\Nhom5\WebShopPet\WebShopPet\bin\System.Web.WebPages.Deployment.xml
+D:\Nhom5\WebShopPet\WebShopPet\bin\System.Web.WebPages.Razor.xml
+D:\Nhom5\WebShopPet\WebShopPet\bin\Newtonsoft.Json.xml
+D:\Nhom5\WebShopPet\WebShopPet\bin\Antlr3.Runtime.pdb
+D:\Nhom5\WebShopPet\WebShopPet\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Nhom5\WebShopPet\WebShopPet\obj\Debug\WebShopPet.csprojAssemblyReference.cache
+D:\Nhom5\WebShopPet\WebShopPet\obj\Debug\WebShopPet.csproj.CoreCompileInputs.cache
+D:\Nhom5\WebShopPet\WebShopPet\obj\Debug\WebShopPet.csproj.CopyComplete
+D:\Nhom5\WebShopPet\WebShopPet\obj\Debug\WebShopPet.dll
+D:\Nhom5\WebShopPet\WebShopPet\obj\Debug\WebShopPet.pdb
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\WebShopPet.dll.config
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\WebShopPet.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\WebShopPet.pdb
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\csc.exe
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\csc.exe.config
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\csc.rsp
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\csi.exe
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\csi.exe.config
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\csi.rsp
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.AppContext.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Console.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.IO.Compression.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Security.Claims.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.ValueTuple.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\vbc.exe
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\vbc.exe.config
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\vbc.rsp
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\VBCSCompiler.exe
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\Antlr3.Runtime.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\EntityFramework.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\EntityFramework.SqlServer.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\Newtonsoft.Json.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\PagedList.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\PagedList.Mvc.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.Helpers.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.Mvc.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.Optimization.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.Razor.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.WebPages.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.WebPages.Razor.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\WebGrease.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\EntityFramework.xml
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\EntityFramework.SqlServer.xml
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\PagedList.xml
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\PagedList.Mvc.xml
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.Helpers.xml
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.Mvc.xml
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.Optimization.xml
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.Razor.xml
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.WebPages.xml
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.WebPages.Razor.xml
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\Newtonsoft.Json.xml
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\Antlr3.Runtime.pdb
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\obj\Debug\WebShopPet.csprojAssemblyReference.cache
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\obj\Debug\WebShopPet.csproj.CoreCompileInputs.cache
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\obj\Debug\WebShopPet.csproj.CopyComplete
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\obj\Debug\WebShopPet.dll
+C:\Users\Linh\Desktop\WebShopPet\WebShopPet\WebShopPet\obj\Debug\WebShopPet.pdb
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\WebShopPet.dll.config
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\WebShopPet.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\WebShopPet.pdb
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\csc.exe
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\csc.exe.config
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\csc.rsp
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\csi.exe
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\csi.exe.config
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\csi.rsp
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.AppContext.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Collections.Immutable.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Console.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.IO.Compression.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.IO.FileSystem.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.IO.Pipes.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Reflection.Metadata.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Security.AccessControl.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Security.Claims.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.ValueTuple.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Xml.XPath.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\vbc.exe
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\vbc.exe.config
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\vbc.rsp
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\VBCSCompiler.exe
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\VBCSCompiler.exe.config
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\Antlr3.Runtime.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\EntityFramework.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\EntityFramework.SqlServer.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\Microsoft.Web.Infrastructure.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\Newtonsoft.Json.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\PagedList.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\PagedList.Mvc.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.Helpers.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.Mvc.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.Optimization.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.Razor.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.WebPages.Deployment.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.WebPages.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.WebPages.Razor.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\WebGrease.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\EntityFramework.xml
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\EntityFramework.SqlServer.xml
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\PagedList.xml
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\PagedList.Mvc.xml
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.Helpers.xml
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.Mvc.xml
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.Optimization.xml
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.Razor.xml
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.WebPages.xml
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.WebPages.Deployment.xml
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.WebPages.Razor.xml
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\Newtonsoft.Json.xml
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\Antlr3.Runtime.pdb
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\obj\Debug\WebShopPet.csprojAssemblyReference.cache
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\obj\Debug\WebShopPet.csproj.CoreCompileInputs.cache
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\obj\Debug\WebShopPet.csproj.CopyComplete
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\obj\Debug\WebShopPet.dll
+E:\Code\TTTN_Web Bán Mỹ Phẩm Nam giới\WebShopPet\WebShopPet\WebShopPet\obj\Debug\WebShopPet.pdb
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\WebShopPet.dll.config
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\WebShopPet.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\WebShopPet.pdb
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\csc.exe
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\csc.exe.config
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\csc.rsp
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\csi.exe
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\csi.exe.config
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\csi.rsp
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.Managed.Core.targets
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.AppContext.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Collections.Immutable.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Console.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.IO.Compression.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.IO.FileSystem.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.IO.Pipes.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Reflection.Metadata.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Security.AccessControl.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Security.Claims.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Security.Principal.Windows.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.ValueTuple.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Xml.XmlDocument.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Xml.XPath.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\vbc.exe
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\vbc.exe.config
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\vbc.rsp
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\VBCSCompiler.exe
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\roslyn\VBCSCompiler.exe.config
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\Antlr3.Runtime.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\EntityFramework.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\EntityFramework.SqlServer.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\Microsoft.Web.Infrastructure.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\Newtonsoft.Json.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\PagedList.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\PagedList.Mvc.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.Helpers.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.Mvc.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.Optimization.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.Razor.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.WebPages.Deployment.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.WebPages.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.WebPages.Razor.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\WebGrease.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\EntityFramework.xml
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\EntityFramework.SqlServer.xml
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\PagedList.xml
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\PagedList.Mvc.xml
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.Helpers.xml
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.Mvc.xml
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.Optimization.xml
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.Razor.xml
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.WebPages.xml
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.WebPages.Deployment.xml
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\System.Web.WebPages.Razor.xml
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\Newtonsoft.Json.xml
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\Antlr3.Runtime.pdb
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\obj\Debug\WebShopPet.csproj.CoreCompileInputs.cache
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\obj\Debug\WebShopPet.csproj.CopyComplete
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\obj\Debug\WebShopPet.dll
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\obj\Debug\WebShopPet.pdb
+D:\TaiLieuHocTap\WEBDOAN\WebShopPet\WebShopPet\WebShopPet\obj\Debug\WebShopPet.csprojAssemblyReference.cache

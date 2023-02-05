@@ -1,0 +1,192 @@
+﻿<!-- Home slider -->
+<section class="p-0">
+    <div class="slide-1 home-slider">
+        <div>
+            <div class="home  text-center">
+                <img src="~/Assets/User/img/175111571_807759073186201_6830387485156799083_n.png" alt="" class="bg-img blur-up lazyload"/>
+               
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="slider-contain">
+                                <div>
+                                    <a href="~/Product/Index" class="btn btn-solid">shop now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Home slider end -->
+<!-- collection banner -->
+<section class="pb-0 ratio2_1">
+    <div class="container">
+        <div class="row partition2">
+            <div class="col-md-6">
+                <a href="#">
+                    <div class="collection-banner p-right text-center">
+                        <div class="img-part">
+                            <img src="~/Assets/User/img/174099047_278988653798643_2700251709476456466_n.png" class="img-fluid blur-up lazyload bg-img"
+                                 alt=""/>
+                            
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <div class="collection-banner p-right text-center">
+                        <div class="img-part">
+                            <img src="~/Assets/User/img/175839221_815949302660461_7029386286203454096_n.png" class="img-fluid blur-up lazyload bg-img"
+                                 alt=""/>
+                           
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- collection banner end -->
+<!-- Paragraph-->
+<div class="title1 section-t-space">
+    <h4>special offer</h4>
+    <h2 class="title-inner1">Hoodie</h2>
+</div>
+<!-- Product slider -->
+<section class="section-b-space p-t-0 ratio_asos">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="product-4 product-m no-arrow">
+                    @foreach (var item in ViewBag.ListThu2)
+                    {
+                        <div class="product-box">
+                            <div class="img-wrapper">
+                                <div class="front">
+                                    @{
+                                        var path = item.PRIMARY_IMAGE;
+                                    }
+                                    <a href="@Url.Action("Details","Product",new { id=item.ID})">
+                                        <img src="@Url.Content(path)"
+                                             class="img-fluid blur-up lazyload bg-img" alt="">
+                                    </a>
+                                </div>
+                                <div class="back">
+                                    <a href="@Url.Action("Details","Product",new { id=item.ID})">
+                                        <img src="@Url.Content(path)"
+                                             class="img-fluid blur-up lazyload bg-img" alt="">
+                                    </a>
+                                </div>
+                                <div class="cart-info cart-wrap">
+                                    <button data-toggle="modal" data-target="#addtocart"
+                                            title="Add to cart">
+                                        <i class="ti-shopping-cart"></i>
+                                    </button> <a href="javascript:void(0)" title="Add to Wishlist">
+                                        <i class="ti-heart" aria-hidden="true"></i>
+                                    </a> <a href="#"
+                                            data-toggle="modal" data-target="#quick-view" title="Quick View">
+                                        <i class="ti-search" aria-hidden="true"></i>
+                                    </a> <a href="compare.html" title="Compare">
+                                        <i class="ti-reload"
+                                           aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-detail">
+                                <div class="rating">
+                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                </div>
+                                <a href="product-page(no-sidebar).html">
+                                    <h6>@item.NAME</h6>
+                                </a>
+                                <h4>@item.PRICE</h4>
+                                <ul class="color-variant">
+                                    <li class="bg-light0"></li>
+                                    <li class="bg-light1"></li>
+                                    <li class="bg-light2"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@{
+    string nameList = "";
+}
+<div class="title1 section-t-space">
+    <h4>special offer</h4>
+    <h2 class="title-inner1">Cargo Vest </h2>
+</div>
+
+<!-- Paragraph-->
+<!-- Product slider -->
+<section class="section-b-space p-t-0 ratio_asos">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="product-4 product-m no-arrow">
+                    @foreach (var item in ViewBag.ListThu)
+                    {
+                        <div class="product-box">
+                            <div class="img-wrapper">
+                                <div class="front">
+                                    @{
+                                        var path = item.PRIMARY_IMAGE;
+                                    }
+                                    <a href="@Url.Action("Details","Product",new { id=item.ID})">
+                                        <img src="@Url.Content(path)"
+                                             class="img-fluid blur-up lazyload bg-img" alt="">
+                                    </a>
+                                </div>
+                                <div class="back">
+                                    <a href="@Url.Action("Details","Product",new { id=item.ID})">
+                                        <img src="@Url.Content(path)"
+                                             class="img-fluid blur-up lazyload bg-img" alt="">
+                                    </a>
+                                </div>
+                                <div class="cart-info cart-wrap">
+                                    <button data-toggle="modal" data-target="#addtocart"
+                                            title="Add to cart">
+                                        <i class="ti-shopping-cart"></i>
+                                    </button> <a href="javascript:void(0)" title="Add to Wishlist">
+                                        <i class="ti-heart" aria-hidden="true"></i>
+                                    </a> <a href="#"
+                                            data-toggle="modal" data-target="#quick-view" title="Quick View">
+                                        <i class="ti-search" aria-hidden="true"></i>
+                                    </a> <a href="compare.html" title="Compare">
+                                        <i class="ti-reload"
+                                           aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-detail">
+                                <div class="rating">
+                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                </div>
+                                <a href="product-page(no-sidebar).html">
+                                    <h6>@item.NAME</h6>
+                                </a>
+                                <h4>@item.PRICE</h4>
+                                <ul class="color-variant">
+                                    <li class="bg-light0"></li>
+                                    <li class="bg-light1"></li>
+                                    <li class="bg-light2"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

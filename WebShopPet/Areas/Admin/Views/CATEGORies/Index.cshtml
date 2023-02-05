@@ -1,0 +1,77 @@
+﻿@model IEnumerable<WebShopPet.Models.CATEGORy>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Danh mục</h2>
+
+<p>
+    @Html.ActionLink("Tạo mới", "Create")
+</p>
+
+<div class="col-lg-12">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">Danh mục</h4>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover table-responsive-sm">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Tên</th>
+                            <th>Danh mục cha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <th>@Html.DisplayFor(modelItem => item.ID)</th>
+                                <td>@Html.DisplayFor(modelItem => item.NAME)</td>
+                                <td>
+
+                                    @if (item.PARENT_ID == null)
+                                    {
+                                        <span class="badge badge-primary light">
+                                            Danh mục gốc
+                                        </span>
+
+                                    }
+                                    else
+                                    {
+                                        var id_cha = item.PARENT_ID;
+                                        foreach (var dm in Model)
+                                        {
+                                            if (id_cha == dm.ID)
+                                            {
+                                                <span class="badge badge-primary light">
+                                                    @dm.NAME
+                                                </span>
+                                            }
+                                        }
+                                    }
+
+                                </td>
+                                <td>
+                                    <div class="d-flex">
+                                        @{ 
+                                            string sua = "CATEGORies/Edit/" + item.ID;
+                                            string xoa = "CATEGORies/Delete/" + item.ID;
+                                        }
+                                        <a href="@Url.Content(sua)" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
+                                        <a href="@Url.Content(xoa)" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                                            }
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- /# card -->
+</div>

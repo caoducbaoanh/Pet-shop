@@ -1,0 +1,96 @@
+﻿<header>
+    <div class="mobile-fix-option"></div>
+    <div class="top-header"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="main-menu">
+                    <div class="menu-left">
+                        <div class="navbar">
+                            <a href="javascript:void(0)" onclick="openNav()">
+                                <div class="bar-style">
+                                    <i class="fa fa-bars sidebar-bar" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                            <div id="mySidenav" class="sidenav">
+                                <a href="javascript:void(0)" class="sidebar-overlay" onclick="closeNav()"></a>
+                                <nav>
+                                    <div onclick="closeNav()">
+                                        <div class="sidebar-back text-left">
+                                            <i class="fa fa-angle-left pr-2"
+                                               aria-hidden="true"></i> Back
+                                        </div>
+                                    </div>
+                                    <ul id="sub-menu" class="sm pixelstrap sm-vertical"></ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="brand-logo">
+                            <a href="~/Home/Index">
+                                <img src="~/Assets/User/img/175934667_296070448703881_3038501082286196467_n.png" 
+                                     class="img-fluid blur-up lazyload" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu-right pull-right">
+                        <div>
+                            <nav id="main-nav">
+                                <div class="toggle-nav"><i class="fa fa-bars sidebar-bar"></i></div>
+                                <ul id="main-menu" class="sm pixelstrap sm-horizontal">
+                                    <li>
+                                        <div class="mobile-back text-right">
+                                            Back<i class="fa fa-angle-right pl-2"
+                                                   aria-hidden="true"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div>
+                            <div class="icon-nav">
+                                <ul>
+                                    <li class="onhover-div mobile-setting">
+                                        <div><img src="~/Assets/User/img/user-male.png" /></div>
+                                        <div class="show-div setting">
+                                            <h6>Account</h6>
+                                            <ul>
+                                                @if (@HttpContext.Current.Session["ID"] != null)
+                                                {
+                                                    <li><a href="@Url.Action("Details","USERS", new {id=@Session["ID"]})">Profile</a></li>
+                                                    <li><a href="@Url.Action("Logout","Session")">Đăng xuất</a></li>
+                                                }
+                                                else
+                                                {
+                                                    <li><a href="@Url.Action("Create","Session")">Đăng nhập</a></li>
+                                                }
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="onhover-div mobile-cart">
+                                        <a href="~/Orders/Index">
+                                            <img src="~/Assets/User/img/cart.png"
+                                                 class="img-fluid blur-up lazyload" alt="">
+
+                                            <span class="badge badge-danger">
+                                                @if (@HttpContext.Current.Session["Order"] != null)
+                                                {
+                                                    var orders = ((List<WebShopPet.Models.ORDER_DETAILS>)HttpContext.Current.Session["Order"]).Count.ToString();
+                                                    @Url.Content(orders);
+                                                }
+                                                else
+                                                {
+                                                    @Url.Content("0");
+                                                }
+                                            </span>
+
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

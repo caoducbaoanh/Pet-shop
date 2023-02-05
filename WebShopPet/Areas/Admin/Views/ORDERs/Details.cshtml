@@ -1,0 +1,84 @@
+﻿@model WebShopPet.Models.ORDER
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card mt-3">
+    <div class="card-header">
+        <strong>@Html.DisplayFor(model => model.DATE)</strong> <span class="float-right">
+            <strong>Trạng thái:</strong> Xử lý
+        </span>
+    </div>
+    <div class="card-body">
+        <div class="row mb-5">
+            <div class="mt-4 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <h6>Từ:</h6>
+                <div> <strong>Shop Pets số 1 Việt Nam</strong> </div>
+                <div>Hà Nội</div>
+                <div>Email: shopPet6688@gmail.com.vn</div>
+                <div>Phone: 0986888888</div>
+            </div>
+            <div class="mt-4 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <h6>Tới:</h6>
+                <div> <strong>@Html.DisplayFor(model => model.USER.NAME)</strong> </div>
+                <div>@Html.DisplayFor(model => model.ADDRESS)</div>
+                <div>Email: @Html.DisplayFor(model => model.USER.EMAIL)</div>
+                <div>Phone: @Html.DisplayFor(model => model.PHONE)</div>
+            </div>
+
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th class="center">#</th>
+                        <th>Sản phẩm</th>
+                        <th class="right">Giá gốc</th>
+                        <th>Giảm giá</th>
+                        <th class="right">Giá</th>
+                        <th class="center">Số lượng</th>
+                        <th class="right">Thành tiền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var item in (ViewBag.ListOrder)) {
+                    <tr>
+                        <td class="center">@item.ID</td>
+                        <td class="left strong">@item.PRODUCT.NAME</td>
+                        <td class="left">@item.PRODUCT.PRICE</td>
+                        <td class="right">@item.PRODUCT.DISCOUNT</td>
+                        <td class="center">@(item.PRODUCT.PRICE - item.PRODUCT.PRICE* item.PRODUCT.DISCOUNT/100)</td>
+                        <td class="center">@item.QUANTITY</td>
+                        <td class="right">@((item.PRODUCT.PRICE - item.PRODUCT.PRICE * item.PRODUCT.DISCOUNT / 100)* item.QUANTITY)</td>
+                    </tr>
+                    }
+       
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-5"> </div>
+            <div class="col-lg-4 col-sm-5 ml-auto">
+                <table class="table table-clear">
+                    <tbody>
+                        <tr>
+                            <td class="left"><strong>Tổng tiền</strong></td>
+                            <td class="right">
+                                <strong>@Model.TOTAL_AMOUNT VNĐ</strong><br>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<p>
+    @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Quay lại", "Index")
+</p>
+

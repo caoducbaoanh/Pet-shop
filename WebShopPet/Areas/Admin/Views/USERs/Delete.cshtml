@@ -1,0 +1,102 @@
+﻿@model WebShopPet.Models.USER
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+<h3>Bạn có chắc sẽ xóa người dùng này?</h3>
+<div>
+    @if (ViewBag.Error != null)
+    {
+        <br />
+        <div class="alert alert-danger">@ViewBag.Error</div>
+    }
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Tên
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NAME)
+        </dd>
+
+        <dt>
+            Giới tính
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SEX)
+        </dd>
+        <dt>
+            Email
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMAIL)
+        </dd>
+
+        <dt>
+            Password
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PASSWORD)
+        </dd>
+
+        <dt>
+            Chức vụ
+        </dt>
+
+        <dd>
+            @if (Model.ROLE == 1)
+            {
+                <p>Admin</p>
+            }
+            else
+            {
+                <p>Người dùng</p>
+            }
+        </dd>
+
+        <dt>
+            Trạng thái
+        </dt>
+
+        <dd>
+            @if (Model.STATUS == 1)
+            {
+                <p>Hoạt động</p>
+            }
+            else
+            {
+                <p>Khóa</p>
+            }
+        </dd>
+
+        <dt>
+            Ảnh đại diện
+        </dt>
+
+        <dd>
+            @{
+                string ImagePath = "~/Assets/images/" + Model.AVATAR;
+            }
+            <img src="@Url.Content(ImagePath)" />
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Quay lại", "Index")
+        </div>
+    }
+</div>

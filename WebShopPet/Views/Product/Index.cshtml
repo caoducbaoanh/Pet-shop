@@ -1,0 +1,129 @@
+﻿@model PagedList.IPagedList<WebShopPet.Models.PRODUCT>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Product";
+}
+
+
+<!-- breadcrumb start -->
+
+<div class="breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="page-title">
+                    <h2>collection</h2>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <nav aria-label="breadcrumb" class="theme-breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="~/Home/Index">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">collection</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+@*breadcrumb end
+    section start*@
+
+<section class="section-b-space ratio_asos">
+    <div class="collection-wrapper">
+        <div class="container">
+            <div class="row">
+              
+                <div class="collection-content col">
+                    <div class="page-main-content">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="collection-product-wrapper">
+                                    <div class="product-top-filter">
+                                        <div class="row">
+                                            <div class="col-xl-12">
+                                                <div class="filter-main-btn">
+                                                    <span class="filter-btn btn btn-theme">
+                                                        <i class="fa fa-filter"
+                                                           aria-hidden="true"></i> Filter
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-10">
+                                                <div class="product-filter-content">
+                                                    <div class="product-page-per-view">
+                                                        @Html.ActionLink("Xếp theo giá", "Index", new { sortOrder = ViewBag.SapTheoGia, currentFilter = ViewBag.CurrentFilter }, new { @class = "sortprice" })
+                                                        @Html.ActionLink("Xếp theo tên", "Index", new { sortOrder = ViewBag.SapTheoTen, currentFilter = ViewBag.CurrentFilter }, new { @class = "sortname" })
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            @using (Html.BeginForm())
+                                            {
+                                                <p>
+                                                    @Html.TextBox("SearchString", ViewBag.CurrentFilter as String)
+                                                    <input type="submit" value="Tìm" />
+                                                </p>
+                                            }
+                                        </div>
+                                    </div>
+                                    <div class="product-wrapper-grid">
+                                        <div class="row margin-res">
+                                            @foreach (var item2 in Model)
+                                            {
+                                                <div class="col-xl-3 col-6 col-grid-box">
+                                                    <div class="product-box">
+                                                        <div class="img-wrapper">
+                                                            <div class="front">
+                                                                <a href="@Url.Action("Details","Product",new { id=item2.ID})"><img src="@Url.Content(item2.PRIMARY_IMAGE)" class="img-fluid blur-up lazyload bg-img" alt=""></a>
+                                                            </div>
+                                                            <div class="back">
+                                                                <a href="@Url.Action("Details","Product",new { id=item2.ID})"><img src="@Url.Content(item2.PRIMARY_IMAGE)" class="img-fluid blur-up lazyload bg-img" alt=""></a>
+                                                            </div>
+                                                            <div class="cart-info cart-wrap">
+                                                                <button data-toggle="modal" data-target="#addtocart" title="Add to cart">
+                                                                    <i class="ti-shopping-cart"></i>
+                                                                </button> <a href="javascript:void(0)" title="Add to Wishlist">
+                                                                    <i class="ti-heart" aria-hidden="true"></i>
+                                                                </a> <a href="#" data-toggle="modal" data-target="#quick-view" title="Quick View">
+                                                                    <i class="ti-search" aria-hidden="true"></i>
+                                                                </a> <a href="compare.html" title="Compare">
+                                                                    <i class="ti-reload" aria-hidden="true"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-detail">
+                                                            <div>
+                                                                <div class="rating"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></div>
+                                                                <a href="product-page(no-sidebar).html">
+                                                                    <h6>@Html.DisplayFor(modelItem => item2.NAME)</h6>
+                                                                </a>
+                                                                <p>
+                                                                    @Html.DisplayFor(modelItem => item2.DESCRIPTION)
+                                                                </p>
+                                                                <h4>$@Html.DisplayFor(modelItem => item2.PRICE)</h4>
+                                                                <ul class="color-variant">
+                                                                    <li class="bg-light0"></li>
+                                                                    <li class="bg-light1"></li>
+                                                                    <li class="bg-light2"></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@*section End*@

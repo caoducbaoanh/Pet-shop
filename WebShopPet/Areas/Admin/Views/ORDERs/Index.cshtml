@@ -1,0 +1,159 @@
+﻿@model IEnumerable<WebShopPet.Models.ORDER>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Đơn đặt hàng</h2>
+<style>
+    .row {
+        margin-top: 40px;
+        padding: 0 10px;
+    }
+
+    .clickable {
+        cursor: pointer;
+    }
+
+    .panel-heading div {
+        margin-top: -18px;
+        font-size: 15px;
+    }
+
+        .panel-heading div span {
+            margin-left: 5px;
+        }
+
+    .panel-body {
+        display: none;
+    }
+</style>
+<div class="card">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-sm mb-0" id="dev-table">
+                <thead>
+                    <tr>
+                        <th class="align-middle">Ngưởi đặt</th>
+                        <th class="align-middle pr-7">@Html.ActionLink("Ngày", "Index", new { sortOrder = ViewBag.SaptheoDate })</th>
+                        <th class="align-middle" style="min-width: 12.5rem;">@Html.ActionLink("Gửi tới", "Index", new { sortOrder = ViewBag.SaptheoAddress })</th>
+                        <th class="align-middle" style="min-width: 12.5rem;">Số điện thoại</th>
+                        <th class="align-middle text-right">@Html.ActionLink("Trạng thái", "Index", new { sortOrder = ViewBag.SaptheoStatus })</th>
+                        <th class="align-middle text-right">Tổng tiền</th>
+                        <th class="no-sort"></th>
+                    </tr>
+                </thead>
+                <tbody id="orders">
+                    @foreach (var item in Model)
+                    {
+                        <tr class="btn-reveal-trigger">
+                            <td class="py-2">
+                                <a href="#">
+                                    <strong>#@Html.DisplayFor(modelItem => item.ID)</strong>
+                                </a> by <strong>
+                                    @Html.DisplayFor(modelItem => item.USER.NAME)
+                                </strong><br /><a href="#">@Html.DisplayFor(modelItem => item.USER.EMAIL)</a>
+                            </td>
+                            <td class="py-2">@Html.DisplayFor(modelItem => item.DATE)</td>
+                            <td class="py-2">
+                                @Html.DisplayFor(modelItem => item.ADDRESS)
+                            </td>
+
+                            <td class="py-2">@Html.DisplayFor(modelItem => item.PHONE)</td>
+
+                            <td class="py-2 text-right">
+                                @if (item.STATUS == 0)
+                                {
+                                    <span class="badge badge-danger">
+                                        Chờ xác nhận<span class="ml-1 fa fa-redo"></span>
+                                    </span>
+                                }
+                                else if (item.STATUS == 1)
+                                {
+                                    <span class="badge badge-primary">
+                                        Đang giao hàng<span class="ml-1 fa fa-redo"></span>
+                                    </span>
+                                }
+                                else if (item.STATUS == 2)
+                                {
+                                    <span class="badge badge-primary">
+                                        Đã giao hàng<span class="ml-1 fa fa-check"></span>
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span class="badge badge-success">
+                                        Đã nhận hàng<span class="ml-1 fa fa-redo"></span>
+                                    </span>
+                                }
+                            </td>
+                            <td class="py-2 text-right">
+                                @Html.DisplayFor(modelItem => item.TOTAL_AMOUNT) VND
+                            </td>
+                            <td>
+                                @Html.ActionLink("Sửa", "Edit", new { id = item.ID }, new { @class = "btn btn-primary shadow btn-xs" }) |
+                                @Html.ActionLink("Chi Tiết", "Details", new { id = item.ID }, new { @class = "btn btn-warning shadow btn-xs" }) |
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    (function () {
+        'use strict';
+        var $ = jQuery;
+        $.fn.extend({
+            filterTable: function () {
+                return this.each(function () {
+                    $(this).on('keyup', function (e) {
+                        $('.filterTable_no_results').remove();
+                        var $this = $(this),
+                            search = $this.val().toLowerCase(),
+                            target = $this.attr('datafilters'),
+                            $target = $(target),
+                            $rows = $target.find('tbody tr');
+                        if (search == '') {
+                            $rows.show();
+                        }
+                        else {
+                            $rows.each(function () {
+                                var $this = $(this);
+                                $this.text().toLowerCase().indexOf(search) === -1 ? $this.hide() : $this.show();
+                            }
+                            )
+                            if ($target.find('tbody tr:visible').size() === 0) {
+                                var col_count = $target.find('tr').first().find('td').size();
+                                var no_results = $('<tr class="filterTable_no_results"><td colspan="' + col_count + '">Không tìm thấy kết quả nào</td></tr>')
+
+                                $target.find('tbody').append(no_results);
+                            }
+                        }
+                    }
+                    );
+                }
+                );
+            }
+        }
+        );
+        $('[data-action="filter"]').filterTable();
+    })(jQuery);
+
+    $(function () {
+        $('[data-action="filter"]').filterTable();
+        $('.container').on('click', '.panel-heading span.filter', function (e) {
+            var $this = $(this),
+                $panel = $this.parents('.panel');
+            $panel.find('.panel-body').slideToggle();
+            if ($this.css('display') != 'none') {
+                $panel.find('.panel-body input').focus();
+            }
+        });
+        $('[data-toggle="tooltip"]').tooltip();
+    })
+
+</script>

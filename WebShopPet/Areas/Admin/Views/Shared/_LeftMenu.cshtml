@@ -1,0 +1,47 @@
+﻿<div class="deznav">
+    <div class="deznav-scroll">
+        <ul class="metismenu" id="menu">
+            <li>
+                <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <i class="flaticon-381-internet"></i>
+                    <span class="nav-text">Trang Chủ</span>
+                </a>
+                <ul aria-expanded="false">
+                    <li>@Html.ActionLink("Trang chủ", "Index", "Homes")</li>
+                </ul>
+            </li>
+            <li>
+                <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <i class="flaticon-381-networking"></i>
+                    <span class="nav-text">Hàng hóa</span>
+                </a>
+                <ul aria-expanded="false">
+                    <li>@Html.ActionLink("Danh sách hàng", "Index", "PRODUCTs")</li>
+                    <li>@Html.ActionLink("Thêm hàng", "Create", "PRODUCTs")</li>
+                </ul>
+            </li>
+            <li>
+                <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <i class="flaticon-381-television"></i>
+                    <span class="nav-text">Cửa hàng</span>
+                </a>
+                <ul aria-expanded="false">
+                    <li>@Html.ActionLink("Đơn đặt hàng", "Index", "ORDERs")</li>
+                    <li>@Html.ActionLink("Danh sách người dùng", "Index", "USERs")</li>
+                </ul>
+            </li>
+            <li>
+                <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <i class="flaticon-381-heart"></i>
+                    <span class="nav-text">Danh mục</span>
+                </a>
+                <ul aria-expanded="false">
+                    <li>@Html.ActionLink("Danh sách danh mục", "Index", "CATEGORies")</li>
+                    <li>@Html.ActionLink("Tạo mới danh mục", "Create", "CATEGORies")</li>
+                </ul>
+            </li>
+        </ul>
+
+
+    </div>
+</div>

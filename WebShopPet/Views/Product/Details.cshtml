@@ -1,0 +1,389 @@
+﻿@model WebShopPet.Models.PRODUCT
+
+@{
+    ViewBag.Title = "Details";
+}
+<!-- breadcrumb start -->
+<div class="breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="page-title">
+                    <h2>product</h2>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <nav aria-label="breadcrumb" class="theme-breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="@Url.Action("Index","Home")">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">product</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb End -->
+<!-- section start -->
+<section class="section-b-space">
+    <div class="collection-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2 collection-filter">
+                    <!-- side-bar single product slider start -->
+                    <!-- side-bar single product slider end -->
+                </div>
+                <div class="col-lg-9 col-sm-12 col-xs-12">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="filter-main-btn mb-2">
+                                    <span class="filter-btn">
+                                        <i class="fa fa-filter"
+                                           aria-hidden="true"></i> filter
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="product-slick">
+                                    <div>
+                                        <img src="@Url.Content(Model.PRIMARY_IMAGE)" alt=""
+                                             class="img-fluid blur-up lazyload image_zoom_cls-0">
+                                    </div>
+                                    <div>
+                                        <img src="@Url.Content( Model.PRIMARY_IMAGE)" alt=""
+                                             class="img-fluid blur-up lazyload image_zoom_cls-1">
+                                    </div>
+                                    <div>
+                                        <img src="@Url.Content( Model.PRIMARY_IMAGE)" alt=""
+                                             class="img-fluid blur-up lazyload image_zoom_cls-2">
+                                    </div>
+                                    <div>
+                                        <img src="@Url.Content( Model.PRIMARY_IMAGE)" alt=""
+                                             class="img-fluid blur-up lazyload image_zoom_cls-3">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 p-0">
+                                        <div class="slider-nav">
+                                            <div>
+                                                <img src="@Url.Content(Model.PRIMARY_IMAGE)" alt=""
+                                                     class="img-fluid blur-up lazyload">
+                                            </div>
+                                            <div>
+                                                <img src="@Url.Content(Model.PRIMARY_IMAGE)" alt=""
+                                                     class="img-fluid blur-up lazyload">
+                                            </div>
+                                            <div>
+                                                <img src="@Url.Content(Model.PRIMARY_IMAGE)" alt=""
+                                                     class="img-fluid blur-up lazyload">
+                                            </div>
+                                            <div>
+                                                <img src="@Url.Content(Model.PRIMARY_IMAGE)" alt=""
+                                                     class="img-fluid blur-up lazyload">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 rtl-text">
+                                <div class="product-right">
+                                    <h2>@Html.DisplayFor(modelItem => Model.NAME)</h2>
+                                    <h4><del>$@Html.DisplayFor(modelItem => Model.PRICE)</del><span>@Html.DisplayFor(modelItem => Model.DISCOUNT)% off</span></h4>
+                                    @{
+                                        var priceSale = Model.PRICE.ToString();
+                                        if (Model.DISCOUNT != 0)
+                                        {
+                                            priceSale = (Convert.ToDouble(Model.PRICE) * Model.DISCOUNT / 100).ToString();
+                                        }
+
+                                    }
+                                    <h3>$ @priceSale</h3>
+                                    <ul class="color-variant">
+                                        <li class="bg-light0"></li>
+                                        <li class="bg-light1"></li>
+                                        <li class="bg-light2"></li>
+                                    </ul>
+                                    <div class="product-description border-product">
+                                        <h6 class="product-title size-text">
+                                            select size <span>
+                                                <a href="#"
+                                                   data-toggle="modal" data-target="#sizemodal">
+                                                    size
+                                                    chart
+                                                </a>
+                                            </span>
+                                        </h6>
+                                        <div class="modal fade" id="sizemodal" tabindex="-1" role="dialog"
+                                             aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">
+                                                            Sheer
+                                                            Straight Kurta
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <img src="~/Assets/User/img/size-chart.jpg" alt=""
+                                                             class="img-fluid blur-up lazyload">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="size-box">
+                                            <ul>
+                                                <li class="active"><a href="#">s</a></li>
+                                                <li><a href="#">m</a></li>
+                                                <li><a href="#">l</a></li>
+                                                <li><a href="#">xl</a></li>
+                                            </ul>
+                                        </div>
+                                        <h6 class="product-title">quantity</h6>
+                                        <div class="qty-box">
+                                            <div class="input-group">
+                                                <span class="input-group-prepend">
+                                                    <button type="button" class="btn quantity-left-minus"
+                                                            data-type="minus" data-field="">
+                                                        <i class="ti-angle-left"></i>
+                                                    </button>
+                                                </span>
+                                                <input type="text" name="quantity" id="quantity_number" class="form-control input-number"
+                                                       value="1"> <span class="input-group-prepend">
+                                                    <button type="button" class="btn quantity-right-plus"
+                                                            data-type="plus" data-field="">
+                                                        <i class="ti-angle-right"></i>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-buttons">
+                                        <button class="btn btn-solid btn-add-cart" data-toggle="modal">add to cart</button>
+                                    </div>
+                                    <div class="border-product">
+                                        <h6 class="product-title">product details</h6>
+                                        <p>
+                                            @Html.DisplayFor(modelItem => Model.DESCRIPTION)
+                                        </p>
+                                    </div>
+                                    <div class="border-product">
+                                        <h6 class="product-title">share it</h6>
+                                        <div class="product-icon"
+                                            <ul class="product-social ">
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>   
+                                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>   
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>   
+                                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>   
+                                                <li><a href="#"><i class="fa fa-rss"></i></a></li>    
+                                            </ul>
+                                            <form class="d-inline-block">
+                                                <button class="wishlist-btn">
+                                                    <i class="fa fa-heart"></i><span class="title-font">Add To WishList</span>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="border-product">
+                                        <h6 class="product-title">Time Reminder</h6>
+                                        <div class="timer">
+                                            <p id="demo">
+                                                <span>
+                                                    25 <span class="padding-l">:</span> <span class="timer-cal">Days</span>
+                                                </span><span>
+                                                    22 <span class="padding-l">:</span> <span class="timer-cal">Hrs</span>
+                                                </span><span>
+                                                    13 <span class="padding-l">:</span> <span class="timer-cal">Min</span>
+                                                </span><span>
+                                                    57 <span class="timer-cal">Sec</span>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="tab-product m-0">
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-12">
+                                <ul class="nav nav-tabs nav-material" id="top-tab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="top-home-tab"
+                                           data-toggle="tab" href="#top-home" role="tab" aria-selected="true">
+                                            <i class="icofont icofont-ui-home"></i>Description
+                                        </a>
+                                        <div class="material-border"></div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="profile-top-tab" data-toggle="tab"
+                                           href="#top-profile" role="tab" aria-selected="false">
+                                            <i class="icofont icofont-man-in-glasses"></i>Details
+                                        </a>
+                                        <div class="material-border"></div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="contact-top-tab" data-toggle="tab"
+                                           href="#top-contact" role="tab" aria-selected="false">
+                                            <i class="icofont icofont-contacts"></i>Video
+                                        </a>
+                                        <div class="material-border"></div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="review-top-tab" data-toggle="tab"
+                                           href="#top-review" role="tab" aria-selected="false">
+                                            <i class="icofont icofont-contacts"></i>Write Review
+                                        </a>
+                                        <div class="material-border"></div>
+                                    </li>
+                                </ul>
+                                <div class="tab-content nav-material" id="top-tabContent">
+                                    <div class="tab-pane fade show active" id="top-home" role="tabpanel"
+                                         aria-labelledby="top-home-tab">
+                                        <p>
+                                            @Html.DisplayFor(modelItem => Model.DESCRIPTION)
+                                        </p>
+                                    </div>
+                                    <div class="tab-pane fade" id="top-profile" role="tabpanel"
+                                         aria-labelledby="profile-top-tab">
+                                        <p>
+                                            @Html.DisplayFor(modelItem => Model.DESCRIPTION)
+                                        </p>
+                                        <div class="single-product-tables">
+                                            <table>
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td>Color</td>
+                                                        <td> @Html.DisplayFor(modelItem => Model.COLOR)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Material</td>
+                                                        <td>Crepe printed</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Size</td>
+                                                        <td> @Html.DisplayFor(modelItem => Model.SIZE) Inches</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="tab-pane fade" id="top-review" role="tabpanel"
+                                         aria-labelledby="review-top-tab">
+                                        <form class="theme-form">
+                                            <div class="form-row">
+                                                <div class="col-md-12">
+                                                    <div class="media">
+                                                        <label>Rating</label>
+                                                        <div class="media-body ml-3">
+                                                            <div class="rating three-star">
+                                                                <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="name">Name</label>
+                                                    <input type="text" class="form-control" id="name"
+                                                           placeholder="Enter Your name" required>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="email">Email</label>
+                                                    <input type="text" class="form-control" id="email"
+                                                           placeholder="Email" required>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <label for="review">Review Title</label>
+                                                    <input type="text" class="form-control" id="review"
+                                                           placeholder="Enter your Review Subjects" required>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <label for="review">Review Title</label>
+                                                    <textarea class="form-control"
+                                                              placeholder="Wrire Your Testimonial Here"
+                                                              id="exampleFormControlTextarea1" rows="6"></textarea>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <button class="btn btn-solid" type="submit">
+                                                        Submit YOur
+                                                        Review
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts
+{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.btn-add-cart').on('click', function () {
+                
+                var quantity = parseInt($("#quantity_number").val());
+                $.ajax({
+                type: "GET",
+                url: '/Orders/LoadTempQuantity',
+                data: {
+                    ID: @Model.ID,
+                },
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                    success: function (response) {
+                        debugger
+                    var product_quantity = parseInt(response.Quantity);
+                    var all_quantity = quantity + product_quantity;
+                    if(all_quantity <=  @Model.AVAILABLE_QUANTITY){
+                        $.ajax({
+                            type: "GET",
+                            url: '/Orders/Create',
+                            data: {
+                                ProductID: @Model.ID,
+                                Quantity: quantity
+                            },
+                            dataType: "json",
+                            contentType: "application/json; charset=utf-8",
+                            success: function (response) {
+                                var product_quantity = parseInt(response.Quantity);
+                                var number_orders = parseInt(response.orders);
+                                if (product_quantity == 0) {
+                                    $(".badge-danger").text(number_orders);
+                                }
+                                toastr.success(response.Message);
+                            },
+                            error: function (xhr, textStatus, errorThrown) {
+                                toastr.error("Đặt hàng thất bại vui lòng thử lại sau!");
+                            }
+                        })
+                    }else{
+                    toastr.error("Số lượng hàng không đủ");
+                    }
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    toastr.error("Đặt hàng thất bại vui lòng thử lại sau!");
+                }
+            });
+            });
+        });
+    </script>
+}
